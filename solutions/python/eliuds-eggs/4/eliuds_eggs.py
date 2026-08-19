@@ -1,0 +1,10 @@
+"""Module providing a function to get the egg count"""
+
+def egg_count(display_value):
+    """Function that returns the number of eggs given the encoded display value"""
+    count = 0
+    while display_value > 0:
+        if display_value % 2 == 1:
+            count += 1
+        display_value //= 2   
+    return count
